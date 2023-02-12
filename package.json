@@ -1,7 +1,7 @@
 {
   "name": "carni-template",
   "version": "1.0.0",
-  "description": "Sample new project for carni, the text-based game engine.",
+  "description": "Sample new project for Carni, the text-based game engine.",
   "scripts": {
     "build": "carni",
     "dev": "carni dev"
@@ -9,7 +9,9 @@
   "author": "FitzFish",
   "license": "ISC",
   "dependencies": {
-    "carni": "^0.0.2"
+    "carni": "^0.0.20",
+    "carni-audio": "^0.0.1",
+    "just-random-integer": "^4.2.0"
   },
   "devDependencies": {
     "eslint": "^8.0.1",
@@ -17,6 +19,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-vue": "^9.1.0"
+    "eslint-plugin-vue": "^9.1.0",
+    "all-of-just": "^0.18.0"
   }
 }
