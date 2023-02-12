@@ -9,6 +9,7 @@
   "author": "FitzFish",
   "license": "ISC",
   "dependencies": {
+    "all-of-just": "^0.18.0",
     "carni": "^0.0.20",
     "carni-audio": "^0.0.1",
     "just-random-integer": "^4.2.0"
@@ -19,7 +20,6 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-vue": "^9.1.0",
-    "all-of-just": "^0.18.0"
+    "eslint-plugin-vue": "^9.1.0"
   }
 }
