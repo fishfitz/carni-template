@@ -1,20 +1,28 @@
 <template>
-  <div>
+  <div class="centered">
     <h1> Main menu </h1>
-    <template v-if="!$story.isNewGame">
-      <view-link to="play">
-        Continue
-      </view-link>
-      <br>
-    </template>
-    <view-link to="play" @click="$world.NEW_GAME()">
-      New game
+    <view-link to="play" @mouseenter="click">
+      Play
     </view-link>
     <br>
-    <view-link to="credits">
+    <view-link to="credits" @mouseenter="click">
       Credits
     </view-link>
-
-    <br/><br/>
   </div>
 </template>
+
+<script setup>
+import { onMounted, onUnmounted } from 'vue'
+
+const click = () => {
+  $world.sound.start('click')
+}
+
+onMounted(() => {
+  $world.sound.start('birds', { loop: true })
+})
+
+onUnmounted(() => {
+  $world.sound.stop('birds')
+})
+</script>
